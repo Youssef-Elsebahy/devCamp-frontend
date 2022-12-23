@@ -19,7 +19,7 @@
 
 <body>
     <header class="header">
-        <h1 class="text-center">countries list from api with filters</h1>
+        <h1 class="text-center my-3">countries list from api with filters</h1>
     </header>
     <main>
 
@@ -28,19 +28,19 @@
                 <div class="col-3">
                     <div class="form-group">
                         <label for="countryName">Filter by Name:</label>
-                        <input type="text" id="country-name" name="countryName" class="form-control">
+                        <input type="text" id="country-name" name="countryName" class="form-control filter-field">
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="form-group">
                         <label for="countryName">Filter by Region:</label>
-                        <input type="text" id="region" name="regionName" class="form-control">
+                        <input type="text" id="region" name="regionName" class="form-control filter-field">
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="form-group">
                         <label for="independent">independent?</label>
-                        <select name="independent" id="independent" class="form-select" aria-label="Default select example">
+                        <select name="independent" id="independent" class="form-select filter-field" aria-label="Default select example">
                             <option value="" selected>select option</option>
                             <option value="true">yes</option>
                             <option value="false">no</option>
@@ -50,11 +50,11 @@
                 <div class="col-3">
                     <div class="form-group">
                         <label for="capital">Filter by Capital:</label>
-                        <input type="text" name="capital" class="form-control" id="capital">
+                        <input type="text" name="capital" class="form-control filter-field" id="capital">
                     </div>
                 </div>
             </div>
-            <div class=" d-grid gap-1 d-md-block mt-2">
+            <div class=" d-grid gap-1 d-md-block mt-3">
                 <button type="button" class="btn btn-danger" id="clear">Clear filters</button>
             </div>
             <div class="row">
@@ -84,6 +84,5 @@
         crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
-
 </html>
 
